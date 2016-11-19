@@ -1,0 +1,1 @@
+wget -q -O Bank https://www.cbr.ru/currency_base/daily.aspx?date_req=19.11.2016 ; grep -o -E '<td>[0-9]{2},[0-9]*?<\/td>' Bank > Bank1 ;  grep -o -E '<td>[A-Z]{3}</td>' Bank > Bank2 ; sed -e 's/<td>//' -e 's/<\/td>//' Bank1 > Bank3 ; sed -e 's/<td>//' -e 's/<\/td>//' Bank2 > Bank4 ; paste --delimiters=- Bank4 Bank3 >Bank5
