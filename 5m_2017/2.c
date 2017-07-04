@@ -19,23 +19,23 @@ int main()
 	char string[] = "%.zf\n";
 	string[2] = t;
   
-	float Int = 0, x, a, b, h;
+	float Int = 0, x, y, z, h;
 	const double Pi = 3.14159;
 	printf("Lower border : ");
   
-	scanf("%f", &a);
+	scanf("%f", &y);
 	printf("Upper border: ");
-	scanf("%f", &b);
+	scanf("%f", &z);
 
-	h = (b - a) / N;
+	h = (z - y) / N;
 
-	x = a + h;
-	while (x < b)
+	x = y + h;
+	while (x < z)
 	{
 
 		Int = Int + 4 * F(x);
 		x = x + h;
-		if (x >= b) 
+		if (x >= z) 
 			break;
 
 		Int = Int + 2 * F(x);
@@ -43,7 +43,7 @@ int main()
 
 	}
 
-	Int = (h / 3)*(Int + F(a) + F(b));
+	Int = (h / 3)*(Int + F(y) + F(z));
 
 	printf(string, Int);
 
