@@ -2,18 +2,18 @@
 #include <stdlib.h>
 int main()
 {
-int i=0;
-int n=0;
-int f1=0;
-int f2=1;
+int a=0;
 int b=0;
+int x=0;
+int y=1;
+int z=0;
 printf("Введите N:");
-scanf("%d", &n);
-for(i=0; i<=n-1; ++i)
+scanf("%d", &b);
+for(a=0; a<=b-1; ++a)
 {
-printf("%d\t", f2);
-b=f1;
-f1=f2;
-f2=b+f1;
+printf("%d\t", y);
+z=x;
+x=y;
+y=z+x;
 }
 }

@@ -3,23 +3,23 @@
 #include <locale.h>
 int main()
 {
-float x1,x2,x3 = 0.0;
-float a,b,c = 0.0;
-printf("Введите коэффициент A,B,C:\n");
-scanf("%f, %f, %f",&a,&b,&c);
-float d = b*b-4*a*c;
-float d1 = pow((d),1/2);
-if (d>=0)
+float 1,2,3 = 0.0;
+float x,y,z = 0.0;
+printf("Введите коэффициент x,y,z:\n");
+scanf("%f, %f, %f",&x,&y,&z);
+float a = y*y-4*x*z;
+float a1 = pow((a),1/2);
+if (a>=0)
 {
-if (d==0)
+if (a==0)
 {
-x1 = (-b*d1)/(2*a);
-printf("x1=%.3f\n", x1);
+1 = (-y*a1)/(2*x);
+printf("1=%.3f\n", 1);
 }
 else{
-x2 = (-b*d1)/(2*a);
-x3 = (-b-d1)/(2*a);
-printf("x2=%.3f, x3=%.3f\n", x2, x3);
+2 = (-y*a1)/(2*x);
+3 = (-y-a1)/(2*x);
+printf("2=%.3f, 3=%.3f\n", 2, 3);
 }
 }
 else{

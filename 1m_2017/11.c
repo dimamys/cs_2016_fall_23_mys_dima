@@ -4,16 +4,16 @@
 #include <math.h>
 int main()
 {
-int i=0,k=0, S=0;
+int x=0,y=0, z=0;
 char c[1000];
 printf("Введите:");
 gets(c);
-for(k=strlen(c);k>0;--k){
-if(c[k-1]=='1'){
-S=S+pow(2,i);
+for(y=strlen(c);y>0;--y){
+if(c[y-1]=='1'){
+z=z+pow(2,x);
 }
-i=i+1;
+x=x+1;
 }
-printf("%d", S);
+printf("%d", z);
 return 0;
 }
