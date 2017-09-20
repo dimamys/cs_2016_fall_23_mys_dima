@@ -3,14 +3,14 @@
 
 int main()
 {
-float t1,t2;
+float n1,n2;
 printf("Введите t1*t2:");
-scanf("%f*%f", &t1, &t2);
+scanf("%f*%f", &n1, &n2);
 float s=0.0;
 printf("Шаг:");
 scanf("%f", &s);
-float l=(fabs(t2-t1))/s;
-float c = t1;
+float l=(fabs(n2-n1))/s;
+float c = n1;
 printf("   C  | F\n");
 
 	do{
@@ -18,7 +18,7 @@ float f=1.8*c+32;
 printf("|%.2f|%.2f|\n", c, f);
 	c+=l;
 }
-while (c<t2);
-printf("|%.2f|%.2f|\n", t2 ,1.8*t2+32 );
+while (c<n2);
+printf("|%.2f|%.2f|\n", n2 ,1.8*n2+32 );
 return 0;
 }
