@@ -6,10 +6,10 @@ void copy(char *y,char *x)
         FILE *Y,*X;
         Y=fopen(y,"r");
         X=fopen(x,"w");
-        char i;
-        while((i=fgetc(Y))!=EOF)
+        char n;
+        while((n=fgetc(Y))!=EOF)
         {
-                fputc(i,X);
+                fputc(n,X);
         }
 }
 
