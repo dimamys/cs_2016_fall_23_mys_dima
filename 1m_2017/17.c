@@ -3,14 +3,14 @@
 double razni(double * m, int len)
 {
 double x,y;
-int i;
+int n;
 x = m[0];
-for (i = 0;i<len;i++)
-{	if(x<m[i])
-x = m[i];
+for (n = 0;n<len;n++)
+{	if(x<m[n])
+x = m[n];
 }
 y=m[0];
-for (i=0;i<len;i++)
-{	if(y>m[i])
-y=m[i];
+for (n=0;n<len;n++)
+{	if(y>m[n])
+y=m[n];
  
