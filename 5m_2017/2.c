@@ -14,17 +14,17 @@ int main()
 {
 
 	char t;
-	printf("Enter accurancy of answer (max -9): ");
+	printf("введите точность ответа (max -9): ");
 	scanf("%c", &t);
 	char string[] = "%.zf\n";
 	string[2] = t;
   
 	float Int = 0, x, y, z, h;
 	const double Pi = 3.14159;
-	printf("Lower border : ");
+	printf("Нижняя граница : ");
   
 	scanf("%f", &y);
-	printf("Upper border: ");
+	printf("Верхняя граница: ");
 	scanf("%f", &z);
 
 	h = (z - y) / N;
