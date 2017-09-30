@@ -15,13 +15,13 @@ void main()
 	float x = 0.0, y=0.0, z=0.0;
 	int i;
 
-	printf("Enter low boarder:\n");
+	printf("Нижняя граница:\n");
 	scanf("%f", &c);
   
-	printf("Enter high boarder:\n");
+	printf("верхняя граница:\n");
 	scanf("%f", &d);
 
-	printf("Enter step:\n");
+	printf("шаг:\n");
 	scanf("%f", &a);
 
 	b = c;
